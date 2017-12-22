@@ -21,8 +21,8 @@ import javax.persistence.Id;
 public class Produto {
     
         @Id
-        @Column(name="cd_produto")
         @GeneratedValue(strategy = GenerationType.IDENTITY)
+        @Column(name="cd_produto")
         private int codigo;
 
     public static final String PROP_CODIGO = "codigo";
